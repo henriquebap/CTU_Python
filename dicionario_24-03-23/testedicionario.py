@@ -1,3 +1,4 @@
+import re
 def display_user_data(user):
     print("Primeiro nome: " + user['first_name'])
     print("Último Nome: " + user['last_name'])
@@ -7,7 +8,11 @@ def display_user_data(user):
 
 def create_user(users):
     first_name = input("Qual seu primeiro nome: ")
+    first_name = first_name.lower()
+    first_name = re.sub(r'[^a-z]','',first_name)
     last_name = input("Qual seu último nome: ")
+    last_name = last_name.lower()
+    last_name = re.sub(r'[^a-z]','',last_name)
     age = int(input("Qual sua idade: "))
     user_data = {
         'first_name': first_name,
@@ -19,6 +24,8 @@ def create_user(users):
 
 def search_user(users):
     first_name = input("Qual usuário deseja visualizar os dados: ")
+    #first_name = first_name.lower
+    #first_name = re.sub(r'[^a-z]','',first_name)
     for user in users:
         if user['first_name'] == first_name:
             display_user_data(user)
