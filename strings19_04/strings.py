@@ -68,4 +68,81 @@ print("-" * 10)
 #Strings StartsWith
 print(message.startswith('uma'))
 
+print("___" *10)
+#retorna em boolean
+version = '95'
+print(version.startswith('9'))
+print("_-_-_-_" *10)
+frase = "Meu nome é Henrique"
+print(frase.endswith("que"))
+print("_-_-_-_" *10)
+print(frase.endswith("henr"))
+print("_-_-_-_" *10)
+print(frase.find("que"))
+#index
+print("_-_-_-_" *10 + "index")
+print(frase.index("Henrique"))
+#islnum
+#retorna alfanumerico
+print("_-_-_-_" *10 + "islnum")
+message2 = "mensagem \u0002"
+print(message2.isalnum())
+print(message2.isalpha())
+#isdigit
+print("_-_-_-_" *10 + "isdigit")
+text = '123456'
+print(text.isdigit())
+notdigit = "Ola"
+print(notdigit.isdigit())
+is_float = "2.5"
+print(is_float.isdigit())
+#isnumeric
+print("_-_-_-_" *10 + "isNumeric")
+print(text, text.isnumeric())
+#space
+print("_-_-_-_" *10 + "isSpace")
+space = "  "
+print(space.isspace())
+#lower :) & islower
+print("_-_-_-_" *10 + "lower")
+to_lower = "AAAAAAAAAA TO DOIDO"
+print(to_lower.lower())
+to_lower = to_lower.lower()
+print(to_lower)
+print(to_lower.islower())
+#name = input("Digite o nome: ").lower()
+print(name)
+#Upper ;( para gritar
+print("_-_-_-_" *10 + "Upper")
+name = name.upper()
+print(name)
+#title 
+print("_-_-_-_" *10 + "Title")
+print(name.title())
+#join so funciona com Strings
+print("_-_-_-_" *10 + "Join")
+words = ["Henrique", "Oliveira", "Baptista"]
+print(words)
+print(" ".join(words))
+#Strip - limpar os caracteres da String :o
+print("_-_-_-_" *10 + "Strip")
+filme = "           Velozes e furiosos  "
+print(filme.strip())
+filme2 = "$$#%@!¨#&#*( The Recruit     ##"
+print(filme2.strip("$$#%@!¨#&#* ("))
+#ltrip limpa para a esquerda
+print(filme2.lstrip("$$#%@!¨#&#* ("))
+#rStrip para a direita
+print(filme2.rstrip("$$#%@!¨#&#* ("))
+#Replace subsititui
+print("_-_-_-_" *10 + "REPLACE")
+love = "Eu amo pipoca, affs tchau. tchau pipoca"
+print(love.replace("pipoca", "nutella"))
+#split
+print("_-_-_-_" *10 + "SPLIT")
+new_list = "Eu prefiro nescal do que toddy".split()
+print(new_list)
+print("_-_-_-_" *10 + "Strip")
+
+
 
