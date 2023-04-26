@@ -140,9 +140,18 @@ love = "Eu amo pipoca, affs tchau. tchau pipoca"
 print(love.replace("pipoca", "nutella"))
 #split
 print("_-_-_-_" *10 + "SPLIT")
-new_list = "Eu prefiro nescal do que toddy".split()
+new_list = "Eu prefiro nescal do que toddy"#.split()
 print(new_list)
-print("_-_-_-_" *10 + "Strip")
+#passando um valor para o split, na posicao desse valor ele quebra e faz uma lista (e = ['Eu pr', 'firo n', 'scal do qu', ' toddy'])
+print(new_list.split('e'))
+#swapcase inverte o maisculo de uma frase para minusculo virse e versa
+print("_-_-_-_" *10 + "SWAPCASE")
+sim = "AAAaaAAAaa prAq quE VouU UsAr IsSo"
+print(sim)
+sim = sim.swapcase()
+print(sim)
+
+
 
 
 
