@@ -14,7 +14,11 @@ def store_cad():
         'store_id': store_id,
         'store_name': store_name
     }
-    return store_disc
+    if store_id and store_name:  # add a check to make sure store_id and store_name are not None
+        return store_disc
+    else:
+        return None
+    
 def cad_prod():
     validar_numero = r"^\d+$"
     prod_id = input("Digite o id do produto: ")
