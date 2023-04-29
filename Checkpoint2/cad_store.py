@@ -36,3 +36,13 @@ def cad_prod():
         prod_desc = input("Coloque uma descricao para o produto")
     prod_price = input("Valor do produto: ")
     prod_price = float(prod_price)
+    prod_disc = {
+                'prod_id': prod_id,
+                'prod_nm': prod_nm,
+                'prod_desc': prod_desc,
+                'prod_price': prod_price
+            }
+    if prod_id and prod_nm and prod_price:
+        return prod_disc
+    else:
+        return None
