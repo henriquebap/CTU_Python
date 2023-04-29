@@ -1,9 +1,13 @@
 from cad_store import store_cad, cad_prod
 
 def option():
+    print("----" * 10)
     print("1 - Cadastrar uma loja")
     print("2 - Cadastrar o Produto")
+    print("3 - Mostrar Produtos cadastrados")
     print("0 - Sair")
+    print("----" * 10)
+
     Option = int(input())
     return Option
 
@@ -35,28 +39,28 @@ while True:
        store = store_cad()
        if store:
            save_store(store['store_id'], store['store_name'])
-           print("Loja cadastrada com sucesso")
-           print(stores)
+           print("Loja cadastrada com sucesso\n")
        else:
            print("Erro: dados de loja invalidos")
     elif Option == 2:
         prod = cad_prod()
         store_id = input("Digite o ID da loja: ")
         if save_product(store_id,prod['prod_id'], prod['prod_nm'], prod['prod_desc'], prod['prod_price']):
-            print("Produto cadastrado com sucesso")
-            print(stores)
+            print("Produto cadastrado com sucesso\n")
         else:
             print("Loja nao encontrada")
     elif Option == 3:
         for store in stores:
+            print("---- Loja --------")
             print("Loja:", store['store_name'])
+            print("----" * 4)
             if len(store['products']) == 0:
                 print("Nenhum produto cadastrado.")
             else:
                 for product in store['products']:
                     print("Produto:", product['prod_nm'])
                     print("Descricao:", product['prod_desc'])
-                    print("Preco:", product['prod_price'])
+                    print("Preco:", product['prod_price'],"\n")
     elif Option == 0:
         break
     else:
