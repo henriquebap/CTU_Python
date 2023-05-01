@@ -1,4 +1,4 @@
-from cad_store import store_cad, cad_prod
+from cadastro import store_cad, cad_prod
 # Henrique Oliveira Baptista RM: 97796
 def option():
     print("----" * 10)

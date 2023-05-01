@@ -28,7 +28,7 @@ def cad_prod():
         print("Porfavor digie um ID valido, usando numeros")
         return prod_id
     prod_nm = input("Digite o nome do produto: ").lower()
-    prod_nm = re.sub(r'[^a-z]','',prod_nm).strip("$$#%@!¨#&#* (")
+    prod_nm = re.sub(r'[^a-z]','',prod_nm).strip("#$$%@!¨#&#* (")
     prod_desc = input("Coloque uma descricao para o produto: ")
     while len(prod_desc) > 50:
         print("A descricao do produto deve ter no máximo 50 caracteres.")
