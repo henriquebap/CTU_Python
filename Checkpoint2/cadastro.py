@@ -1,13 +1,15 @@
 import re
 def store_cad():
     validar_numero = r"^\d+$" #"regex"  faz a verificação da entrada se corresponde a expressao regular(re.match)
-    store_id = input("Digite o id da loja: ")
-    if re.match(validar_numero, store_id):
-    # Converter a string em um número inteiro
-        store_nmb = int(store_id)
-    else:
-        print("Porfavor digie um ID valido, usando numeros")
-        return store_id
+    while True:
+        store_id = input("Digite o id da loja: ")
+        if re.match(validar_numero, store_id):
+        # Converter a string em um número inteiro
+            store_nm = int(store_id)
+            break
+        else:
+            print("Porfavor digie um ID valido, usando numeros")
+            continue
     store_name = input("Digite o nome da loja: ").lower()
     store_name = re.sub(r'[^a-z]','',store_name).strip("$$#%@!¨#&#* (")
     store_disc = {
