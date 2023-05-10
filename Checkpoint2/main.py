@@ -43,17 +43,18 @@ while True:
        else:
            print("Erro: dados de loja invalidos")
     elif Option == 2:
-        store_id = input("Digite o ID da loja: ")
         if len (stores) == 0:
                 print("Nenhuma Loja Cdastrada")
-        if store_id == store['store_id']:
-                prod = cad_prod()
-                if save_product(store_id,prod['prod_id'], prod['prod_nm'], prod['prod_desc'], prod['prod_price']):
-                    print("Produto cadastrado com sucesso\n")
-                else:
-                    print("Produto nao cadastrado")
         else:
-            print("Loja nao encontrada")
+            store_id = input("Digite o ID da loja: ")
+            if store_id == store['store_id']:
+                    prod = cad_prod()
+                    if save_product(store_id,prod['prod_id'], prod['prod_nm'], prod['prod_desc'], prod['prod_price']):
+                        print("Produto cadastrado com sucesso\n")
+                    else:
+                        print("Produto nao cadastrado")
+            else:
+                print("Loja nao encontrada")
     elif Option == 3:
         for store in stores:
             print("---- Loja --------")
