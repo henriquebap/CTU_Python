@@ -19,6 +19,7 @@ filtered_titles_and_ratings = [
    {"Title": title_rating["Title"], "Rating": title_rating["Rating"]}
     for title_rating in title_ratings
     if title_rating["Rating"] >= threshold
+    
 ]
 
 #print(f"Rating Melhores que {threshold}")
