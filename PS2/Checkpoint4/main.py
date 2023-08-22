@@ -1,4 +1,3 @@
-import csv
 from Tools.get_file import get_file
 from Tools.Avarege import org_rate_search, avarege_comparing
 from Tools.Options import option, option_budget, option_gross, option_rate, option_main
