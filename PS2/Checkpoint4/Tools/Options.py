@@ -1,7 +1,7 @@
 
 def option():
     print("-----"*10)
-    print("Ola User!! Qual Opcao do nosso sistema voce gostaria de escolher? (Digite um numero)")
+    print("Ola!! Qual opcao do nosso sistema voce gostaria de escolher? (Digite um numero)")
     print("1 - Para abrir a Media de nota da Marvel vs DC")
     print("2 - Para abrir quem tem o maior orçamentos nos filmes")
     print("3 - Para visualizar quem tem o maior faturamento")
@@ -20,6 +20,7 @@ def option():
         
 def option_budget():
     print("-----"*10)
+    print("*Notas/Medias*")
     print("Selecione a Opcao que deseja visualizar")
     print("1 - Ver as Notas gerais")
     print("2 - Ver a diferença das notas")
@@ -38,6 +39,7 @@ def option_budget():
 
 def option_gross():
     print("-----"*10)
+    print("Opção Selecionada - *Faturamento*")
     print("1 - Ver a empresa com o maior faturamento")
     print("2 - Ver a media da empresa com o menor faturamento")
     print("3 - A diferenca entre as duas empresas")
@@ -55,7 +57,8 @@ def option_gross():
             
 def option_rate():
     print("-----"*10)
-    print("1 - Para definir a nota:")
+    print("Selecionado : *Filtro de Filmes*")
+    print("1 - Para definir a nota: ")
     print("0 - Para sair")
 
     while True:
