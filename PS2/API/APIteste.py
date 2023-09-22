@@ -26,9 +26,3 @@ def explore_json(obj, prefix=""):
 explore_json(prediction_result)
 
 
-#model.predict(image_path, confidence=40, overlap=30).save("prediction.jpg")
-
-#hosted_prediction_result = model.predict(image_path, hosted=True, confidence=40, overlap=30).json()
-#print(hosted_prediction_result)
-
-#print(model.predict(image_path, hosted=True, confidence=40, overlap=30).json())
