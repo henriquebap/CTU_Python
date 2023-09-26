@@ -1,5 +1,5 @@
 from database import SessionLocal
-from database.models import Cliente, Vendedor #, Produto, Pedido, ItemPedido
+from database.models import Cliente, Vendedor, Produto, Pedido, ItemPedido
 # from functions import get_int
 
 def create_cliente():
@@ -16,6 +16,7 @@ def create_cliente():
     db = SessionLocal()
     try:
         cliente = Cliente()
+        cliente.cod_clie = cod_clie
         cliente.nome_clie = nome
         cliente.cep = endereco
         cliente.cidade = cidade
@@ -89,3 +90,24 @@ def coloca_salario_comissao(cod_ven):
 
     print(f"Espero que deu certo KKK{vendedor.nome_ven} , {vendedor.salario_fixo}, {vendedor.comissao}")
 
+def create_produto():
+    #For a while I'll still creatigns this cod_something inputs
+    cod_prod = input ("Digite o codigo do seu produto")
+    unidade = input("Digite a unidade do produto: ")
+    descricao = input("Colo uma descricao no seu produto: ")
+    val_unit = input ("Digite o valor unitario")
+
+    db = SessionLocal()
+    try:
+        produto = Produto()
+        produto.cod_prod = cod_prod
+        produto.unidade = unidade
+        produto.descricao = descricao
+        produto.val_unit = val_unit
+
+        db.add(produto)
+        db.commit()
+    finally:
+        db.close()
+    
+    print(f"Criando produto....{produto.descricao}")
