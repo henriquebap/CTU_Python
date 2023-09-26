@@ -5,7 +5,3 @@ def password():
     return SQLALCHEMY_DATABASE_URL
 
 
-
-# 
-# ADadioajd asjdad
-# 
