@@ -50,4 +50,12 @@ def create_album(artist_id: int, album: schemas.AlbumCreate):
     return 
 
 
+def get_album(album_id: int):
+    db = SessionLocal()
+    try:
+        album = db.query(models.Album).filter(models.Album.id == album_id).first()
+    finally:
+        db.close()
+    return album
+
     

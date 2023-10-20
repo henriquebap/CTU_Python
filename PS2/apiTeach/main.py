@@ -30,3 +30,9 @@ def create_album(artist_id:int, albums: schemas.AlbumCreate):
     return db_album
 
 
+@app.get("/albums/{album_id}", response_model=schemas.Album)
+def get_album(album_id: int):
+    album = crud.get_album(album_id)
+    if not album:
+        raise HTTPException(404, "Album não encontrado")
+    return album
