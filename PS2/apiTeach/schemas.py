@@ -18,11 +18,17 @@ class AlbumBase(BaseModel):
     name: str
     slug: str
     links: str
-    realese: int
+    release: int
     description: str
-    author_id: str
 
 class AlbumCreate(AlbumBase):
     pass
+
+class Album(AlbumBase):
+    id: int
+
+    class Config:
+        from_attributes = True
+        
 
 

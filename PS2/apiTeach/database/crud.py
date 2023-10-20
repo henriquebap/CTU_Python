@@ -33,17 +33,21 @@ def get_artist(artist_id: int):
     return artist
 
 
-def create_album(album: schemas.Album):
+def create_album(artist_id: int, album: schemas.AlbumCreate):
     db = SessionLocal()
-
     try:
         db_album = models.Album()
         db_album.name = album.name
+        db_album.slug = album.slug
+        db_album.links = album.links
+        db_album.release = album.release
+        db_album.description = album.description
+        db_album.artist_id = artist_id
         db.add(db_album)
         db.commit()
     finally:
         db.close()
-    return album
+    return 
 
 
     
