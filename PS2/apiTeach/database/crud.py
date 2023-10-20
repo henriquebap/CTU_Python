@@ -16,6 +16,23 @@ def create_artist(artist: schemas.ArtistCreate):
     
     return db_artist
 
+def update_artist(artist_id: int, artist: schemas.ArtistCreate):
+    db_artist = get_artist(artist_id)
+    if not db_artist:
+        return
+    
+    db_artist.name = artist.name
+    db_artist.category = artist.category
+
+    db = SessionLocal()
+    try:
+        db.add(db_artist)
+        db.commit()
+    finally:
+        db.close()
+
+    return db_artist
+
 def get_artists():
     db = SessionLocal()
     try:
@@ -32,7 +49,6 @@ def get_artist(artist_id: int):
         db.close()
     return artist
 
-
 def create_album(artist_id: int, album: schemas.AlbumCreate):
     db = SessionLocal()
     try:
@@ -47,7 +63,8 @@ def create_album(artist_id: int, album: schemas.AlbumCreate):
         db.commit()
     finally:
         db.close()
-    return 
+    
+    return db_album
 
 
 def get_album(album_id: int):
@@ -57,5 +74,3 @@ def get_album(album_id: int):
     finally:
         db.close()
     return album
-
-    

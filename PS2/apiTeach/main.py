@@ -22,6 +22,14 @@ def get_artist(artist_id: int):
         raise HTTPException(404, "Artista não encontrado") 
     return artist
 
+@app.put("/artists/{artist_id}", response_model=schemas.Artist)
+def update_artist(artist_id: int, artist: schemas.ArtistCreate):
+    db_artist = crud.update_artist(artist_id, artist)
+    if not db_artist:
+        raise HTTPException(404, "Artist não encontrado")
+    
+    return db_artist
+
 @app.post("/artist/{artist_id}/albums/", status_code=201, response_model=schemas.AlbumBase)
 def create_album(artist_id:int, albums: schemas.AlbumCreate):
     db_album = crud.create_album(artist_id, albums)
