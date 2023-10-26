@@ -1,0 +1,38 @@
+{
+  "track": "ks_nordschleife-touristenfahrten",
+  "number_of_sessions": 1,
+  "players": [
+    {
+      "name": "Just H",
+      "car": "ks_lamborghini_sesto_elemento_huracan_engine",
+      "skin": "00_carbono"
+    }
+  ],
+  "sessions": [
+    {
+      "event": 0,
+      "name": "Hotlap",
+      "type": 4,
+      "lapsCount": 0,
+      "duration": 30,
+      "laps": [
+        {
+          "lap": 0,
+          "car": 0,
+          "sectors": [],
+          "time": 386300,
+          "cuts": 0,
+          "tyre": "I"
+        }
+      ],
+      "lapstotal": [1],
+      "bestLaps": [{ "car": 0, "time": 386300, "lap": 0 }]
+    }
+  ],
+  "extras": [
+    { "name": "special_event", "guid": "", "max": 0, "tier": -1 },
+    { "name": "bestlap", "time": 386300 }
+  ],
+  "__raceIni": "[BENCHMARK]\r\nACTIVE=0\r\n\r\n[REPLAY]\r\nACTIVE=0\r\nFILENAME=temp\\AC_170523-131011_O_ks_porsche_911_gt3_cup_2017_interlagos_.acreplay\r\n\r\n[REMOTE]\r\nACTIVE=0\r\nSERVER_IP=198.251.83.153\r\nSERVER_PORT=12015\r\nSERVER_NAME=No Hesi I Heavy Traffic I SRP I Public Server I discord.gg/nohesitation I US East - 3\r\nSERVER_HTTP_PORT=13015\r\nREQUESTED_CAR=bmw_1m_s3\r\nGUID=76561198291780262\r\n__CM_EXTENDED=1\r\nNAME=Just H\r\nTEAM=\r\nPASSWORD=\r\n__FEATURES=WEATHERFX_V1,SPECTATING_AWARE,LOWER_CLIENTS_SENDING_RATE,CLIENT_MESSAGES,CUSTOM_UPDATE,STEAM_TICKET\r\n\r\n[HEADER]\r\nVERSION=2\r\n\r\n[LAP_INVALIDATOR]\r\nALLOWED_TYRES_OUT=-1\r\n\r\n[RACE]\r\nMODEL=ks_lamborghini_sesto_elemento_huracan_engine\r\nMODEL_CONFIG=\r\nSKIN=00_carbono\r\nTRACK=ks_nordschleife\r\nCONFIG_TRACK=touristenfahrten\r\nAI_LEVEL=90.8\r\nCARS=1\r\nDRIFT_MODE=0\r\nRACE_LAPS=2\r\nFIXED_SETUP=0\r\nPENALTIES=1\r\nJUMP_START_PENALTY=0\r\n\r\n[OPTIONS]\r\nUSE_MPH=0\r\n\r\n[GHOST_CAR]\r\nRECORDING=1\r\nPLAYING=1\r\nLOAD=1\r\nFILE=\r\nENABLED=0\r\nSECONDS_ADVANTAGE=0.992\r\n\r\n[GROOVE]\r\nVIRTUAL_LAPS=10\r\nMAX_LAPS=1\r\nSTARTING_LAPS=1\r\n\r\n[TEMPERATURE]\r\nAMBIENT=23\r\nROAD=32\r\n\r\n[LIGHTING]\r\nSUN_ANGLE=-16.34\r\nTIME_MULT=1.0\r\nCLOUD_SPEED=0.200\r\n__TRACK_GEOTAG_LONG=6.9475\r\n__TRACK_TIMEZONE_BASE_OFFSET=3600\r\n__TRACK_TIMEZONE_DTS=1\r\n__TRACK_TIMEZONE_OFFSET=7200\r\n__TRACK_GEOTAG_LAT=50.3356\r\n__CM_WEATHER_TYPE=-1\r\n\r\n[WEATHER]\r\nNAME=3_clear\r\n\r\n[WIND]\r\nSPEED_KMH_MIN=18.5\r\nSPEED_KMH_MAX=18.5\r\nDIRECTION_DEG=330\r\n\r\n[DYNAMIC_TRACK]\r\nSESSION_START=95\r\nRANDOMNESS=2\r\nLAP_GAIN=132\r\nSESSION_TRANSFER=0\r\n\r\n[CAR_0]\r\nSETUP=\r\nSKIN=00_carbono\r\nMODEL=-\r\nMODEL_CONFIG=\r\nBALLAST=0\r\nRESTRICTOR=0\r\nDRIVER_NAME=Just H\r\nNATIONALITY=Planet Earth\r\nNATION_CODE=PLA\r\n\r\n[RESTART]\r\nACTIVE=0\r\n\r\n[__PREVIEW_GENERATION]\r\nACTIVE=0\r\n\r\n[SESSION_0]\r\nNAME=Hotlap\r\nTYPE=4\r\nDURATION_MINUTES=0\r\nSPAWN_SET=HOTLAP_START\r\n\r\n",
+  "__quickDrive": "{\"Mode\":\"/Pages/Drive/QuickDrive_Hotlap.xaml\",\"ModeData\":\"{\\\"GhostCar\\\":true,\\\"DoNotRecordGhostCar\\\":false,\\\"GhostCarAdvantage\\\":0.99241466498103947,\\\"Penalties\\\":true,\\\"PlayerBallast\\\":0,\\\"PlayerRestrictor\\\":0}\",\"CarId\":\"ks_lamborghini_sesto_elemento_Huracan_Engine\",\"TrackId\":\"ks_nordschleife/touristenfahrten\",\"WeatherId\":\"3_clear\",\"RealConditions\":false,\"Temperature\":22.700000000000003,\"Time\":43124,\"TimeMultipler\":1,\"udt\":false,\"dtv\":\"2023-09-20T18:49:45.7502356-03:00\",\"tpc\":false,\"TrackPropertiesPresetFilename\":\"C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\AcTools Content Manager\\\\Presets\\\\Track States\\\\Auto (set by weather).cmpreset\",\"TrackPropertiesData\":\"{\\\"s\\\":0.95000000000000007,\\\"t\\\":0.0,\\\"r\\\":0.02,\\\"g\\\":132,\\\"d\\\":\\\"Track state specified by weather, or Green, in case weather doesn’t specify track state\\\",\\\"w\\\":true}\",\"asc\":true,\"AssistsPresetFilename\":\"C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\AcTools Content Manager\\\\Presets\\\\Assists\\\\Pro.cmpreset\",\"AssistsData\":\"{\\\"IdealLine\\\":false,\\\"AutoBlip\\\":false,\\\"StabilityControl\\\":0.0,\\\"AutoBrake\\\":false,\\\"AutoShifter\\\":false,\\\"SlipSteam\\\":1.0,\\\"AutoClutch\\\":false,\\\"Abs\\\":2,\\\"TractionControl\\\":2,\\\"VisualDamage\\\":true,\\\"Damage\\\":0.0,\\\"TyreWear\\\":0.25,\\\"FuelConsumption\\\":1.0,\\\"TyreBlankets\\\":false}\",\"ico\":false,\"wsf\":18.5,\"wst\":18.5,\"wd\":330.0,\"rws\":false,\"rwd\":false,\"rcTimezones\":true,\"rcManTime\":false,\"rcManWind\":false,\"rcLw\":false,\"rte\":false,\"rti\":false,\"crt\":false}"
+}

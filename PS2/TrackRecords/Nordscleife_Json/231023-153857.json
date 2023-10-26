@@ -1,0 +1,98 @@
+{
+  "track": "ks_nordschleife-touristenfahrten",
+  "number_of_sessions": 1,
+  "players": [
+    { "name": "Just H", "car": "ks_audi_r18_etron_quattro", "skin": "01_lm2" },
+    {
+      "name": "Santiago Suaya",
+      "car": "gbe_corvette_z06_prvvy_tuned",
+      "skin": "00_freshkiicks"
+    },
+    {
+      "name": "Karl Järveoja",
+      "car": "nissan_skyline_r34_v-specperformance",
+      "skin": "bayside_blue"
+    },
+    {
+      "name": "Marc Bousquet",
+      "car": "nohesi_skyline_r34",
+      "skin": "gun_metal_grey"
+    },
+    {
+      "name": "Marius Jæger",
+      "car": "nohesi_skyline_r34",
+      "skin": "red_galaxy"
+    },
+    {
+      "name": "Eyvind Østberg",
+      "car": "gbe_corvette_z06_prvvy_tuned",
+      "skin": "00_freshkiicks"
+    },
+    {
+      "name": "Fernando Arias",
+      "car": "nohesi_skyline_r34",
+      "skin": "purple_galaxy"
+    },
+    {
+      "name": "Miriam Sjöberg",
+      "car": "nissan_skyline_r34_v-specperformance",
+      "skin": "mnpiii"
+    }
+  ],
+  "sessions": [
+    {
+      "event": 0,
+      "name": "car",
+      "type": 1,
+      "lapsCount": 0,
+      "duration": 720,
+      "laps": [
+        {
+          "lap": 0,
+          "car": 0,
+          "sectors": [],
+          "time": 392449,
+          "cuts": 0,
+          "tyre": "M"
+        },
+        {
+          "lap": 0,
+          "car": 2,
+          "sectors": [],
+          "time": -1,
+          "cuts": 11,
+          "tyre": "ST"
+        },
+        {
+          "lap": 0,
+          "car": 3,
+          "sectors": [],
+          "time": -1,
+          "cuts": 5,
+          "tyre": "ST"
+        },
+        {
+          "lap": 0,
+          "car": 5,
+          "sectors": [],
+          "time": -1,
+          "cuts": 5,
+          "tyre": "S"
+        },
+        {
+          "lap": 0,
+          "car": 6,
+          "sectors": [],
+          "time": -1,
+          "cuts": 16,
+          "tyre": "P-S"
+        }
+      ],
+      "lapstotal": [1, 0, 1, 1, 0, 1, 1, 0],
+      "bestLaps": [{ "car": 0, "time": 392449, "lap": 0 }]
+    }
+  ],
+  "extras": [{ "name": "bestlap", "time": 392449 }],
+  "__raceIni": "[BENCHMARK]\r\nACTIVE=0\r\n\r\n[REPLAY]\r\nACTIVE=0\r\nFILENAME=temp\\AC_170523-131011_O_ks_porsche_911_gt3_cup_2017_interlagos_.acreplay\r\n\r\n[REMOTE]\r\nACTIVE=0\r\nSERVER_IP=198.251.83.153\r\nSERVER_PORT=12015\r\nSERVER_NAME=No Hesi I Heavy Traffic I SRP I Public Server I discord.gg/nohesitation I US East - 3\r\nSERVER_HTTP_PORT=13015\r\nREQUESTED_CAR=bmw_1m_s3\r\nGUID=76561198291780262\r\n__CM_EXTENDED=1\r\nNAME=Just H\r\nTEAM=\r\nPASSWORD=\r\n__FEATURES=WEATHERFX_V1,SPECTATING_AWARE,LOWER_CLIENTS_SENDING_RATE,CLIENT_MESSAGES,CUSTOM_UPDATE,STEAM_TICKET\r\n\r\n[HEADER]\r\nVERSION=2\r\n\r\n[LAP_INVALIDATOR]\r\nALLOWED_TYRES_OUT=-1\r\n\r\n[RACE]\r\nMODEL=ks_audi_r18_etron_quattro\r\nMODEL_CONFIG=\r\nSKIN=01_lm2\r\nTRACK=ks_nordschleife\r\nCONFIG_TRACK=touristenfahrten\r\nAI_LEVEL=90.8\r\nCARS=8\r\nDRIFT_MODE=0\r\nRACE_LAPS=2\r\nFIXED_SETUP=0\r\nPENALTIES=0\r\nJUMP_START_PENALTY=0\r\n\r\n[OPTIONS]\r\nUSE_MPH=0\r\n\r\n[GHOST_CAR]\r\nRECORDING=0\r\nPLAYING=0\r\nLOAD=0\r\nFILE=\r\nENABLED=0\r\nSECONDS_ADVANTAGE=0.992\r\n\r\n[GROOVE]\r\nVIRTUAL_LAPS=10\r\nMAX_LAPS=30\r\nSTARTING_LAPS=0\r\n\r\n[TEMPERATURE]\r\nAMBIENT=23\r\nROAD=32\r\n\r\n[LIGHTING]\r\nSUN_ANGLE=-16.34\r\nTIME_MULT=1.0\r\nCLOUD_SPEED=0.200\r\n__TRACK_GEOTAG_LONG=6.9475\r\n__TRACK_TIMEZONE_BASE_OFFSET=3600\r\n__TRACK_TIMEZONE_DTS=1\r\n__TRACK_TIMEZONE_OFFSET=7200\r\n__TRACK_GEOTAG_LAT=50.3356\r\n__CM_WEATHER_TYPE=-1\r\n\r\n[WEATHER]\r\nNAME=3_clear\r\n\r\n[WIND]\r\nSPEED_KMH_MIN=18.5\r\nSPEED_KMH_MAX=18.5\r\nDIRECTION_DEG=330\r\n\r\n[DYNAMIC_TRACK]\r\nSESSION_START=95\r\nRANDOMNESS=2\r\nLAP_GAIN=132\r\nSESSION_TRANSFER=0\r\n\r\n[CAR_0]\r\nSETUP=\r\nSKIN=01_lm2\r\nMODEL=-\r\nMODEL_CONFIG=\r\nBALLAST=0\r\nRESTRICTOR=0\r\n__CM_DRIVEN_DISTANCE=5363.4\r\nDRIVER_NAME=Just H\r\nNATIONALITY=Planet Earth\r\nNATION_CODE=PLA\r\n\r\n[RESTART]\r\nACTIVE=0\r\n\r\n[__PREVIEW_GENERATION]\r\nACTIVE=0\r\n\r\n[SESSION_0]\r\nNAME=car\r\nDURATION_MINUTES=720\r\nSPAWN_SET=PIT\r\nTYPE=1\r\n__SPEED_LIMIT=0\r\n\r\n[CAR_1]\r\nMODEL=gbe_corvette_z06_prvvy_tuned\r\nSKIN=00_freshkiicks\r\nSETUP=\r\nMODEL_CONFIG=\r\nAI_LEVEL=90.8\r\nAI_AGGRESSION=100\r\nDRIVER_NAME=Santiago Suaya\r\nBALLAST=0\r\nRESTRICTOR=0\r\nNATION_CODE=ARG\r\nNATIONALITY=Argentina\r\n\r\n[CAR_2]\r\nMODEL=nissan_skyline_r34_v-specperformance\r\nSKIN=bayside_blue\r\nSETUP=\r\nMODEL_CONFIG=\r\nAI_LEVEL=90.8\r\nAI_AGGRESSION=100\r\nDRIVER_NAME=Karl Järveoja\r\nBALLAST=0\r\nRESTRICTOR=0\r\nNATION_CODE=EST\r\nNATIONALITY=Estonia\r\n\r\n[CAR_3]\r\nMODEL=nohesi_skyline_r34\r\nSKIN=gun_metal_grey\r\nSETUP=\r\nMODEL_CONFIG=\r\nAI_LEVEL=90.8\r\nAI_AGGRESSION=100\r\nDRIVER_NAME=Marc Bousquet\r\nBALLAST=0\r\nRESTRICTOR=0\r\nNATION_CODE=FRA\r\nNATIONALITY=France\r\n\r\n[CAR_4]\r\nMODEL=nohesi_skyline_r34\r\nSKIN=red_galaxy\r\nSETUP=\r\nMODEL_CONFIG=\r\nAI_LEVEL=90.8\r\nAI_AGGRESSION=100\r\nDRIVER_NAME=Marius Jæger\r\nBALLAST=0\r\nRESTRICTOR=0\r\nNATION_CODE=NOR\r\nNATIONALITY=Norway\r\n\r\n[CAR_5]\r\nMODEL=gbe_corvette_z06_prvvy_tuned\r\nSKIN=00_freshkiicks\r\nSETUP=\r\nMODEL_CONFIG=\r\nAI_LEVEL=90.8\r\nAI_AGGRESSION=100\r\nDRIVER_NAME=Eyvind Østberg\r\nBALLAST=0\r\nRESTRICTOR=0\r\nNATION_CODE=NOR\r\nNATIONALITY=Norway\r\n\r\n[CAR_6]\r\nMODEL=nohesi_skyline_r34\r\nSKIN=purple_galaxy\r\nSETUP=\r\nMODEL_CONFIG=\r\nAI_LEVEL=90.8\r\nAI_AGGRESSION=100\r\nDRIVER_NAME=Fernando Arias\r\nBALLAST=0\r\nRESTRICTOR=0\r\nNATION_CODE=PRY\r\nNATIONALITY=Paraguay\r\n\r\n[CAR_7]\r\nMODEL=nissan_skyline_r34_v-specperformance\r\nSKIN=mnpiii\r\nSETUP=\r\nMODEL_CONFIG=\r\nAI_LEVEL=90.8\r\nAI_AGGRESSION=100\r\nDRIVER_NAME=Miriam Sjöberg\r\nBALLAST=0\r\nRESTRICTOR=0\r\nNATION_CODE=SWE\r\nNATIONALITY=Sweden\r\n\r\n",
+  "__quickDrive": "{\"Mode\":\"/Pages/Drive/QuickDrive_Trackday.xaml\",\"ModeData\":\"{\\\"SpeedLimit\\\":0.0,\\\"Penalties\\\":false,\\\"JumpStartPenalty\\\":0,\\\"LapsNumber\\\":2,\\\"RaceGridSerialized\\\":\\\"{\\\\\\\"ModeId\\\\\\\":\\\\\\\"manual\\\\\\\",\\\\\\\"FilterValue\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"CarIds\\\\\\\":[\\\\\\\"ks_audi_r8_plus\\\\\\\",\\\\\\\"bmw_m8_comp_prvvy_tgn\\\\\\\",\\\\\\\"ks_corvette_c7_stingray\\\\\\\",\\\\\\\"gbe_corvette_z06_prvvy_tuned\\\\\\\",\\\\\\\"ferrari_laferrari\\\\\\\",\\\\\\\"ktyu_honda_nsx_ks\\\\\\\",\\\\\\\"ks_lamborghini_gallardo_sl\\\\\\\",\\\\\\\"ks_lamborghini_countach\\\\\\\",\\\\\\\"spear_lamborghini_lp640_veilside\\\\\\\",\\\\\\\"lamborghini_murcielago_lp640\\\\\\\",\\\\\\\"ks_lamborghini_sesto_elemento\\\\\\\",\\\\\\\"ks_mazda_rx7_tuned\\\\\\\",\\\\\\\"ks_mazda_rx7_spirit_r\\\\\\\",\\\\\\\"ks_mclaren_p1\\\\\\\",\\\\\\\"ks_nissan_370z\\\\\\\",\\\\\\\"ks_nissan_370z_nismo1_v2\\\\\\\",\\\\\\\"nohesi_skyline_r34\\\\\\\",\\\\\\\"nissan_skyline_r34_v-specperformance\\\\\\\",\\\\\\\"ks_nissan_skyline_r34\\\\\\\",\\\\\\\"nissan_skyline_r34_omori_factory_s1\\\\\\\",\\\\\\\"nohesi_nissan_maxima_2jz\\\\\\\",\\\\\\\"bkXHM_nissan_gtr_21_RB_KIT_redd_tuned\\\\\\\",\\\\\\\"bksy_nissan_skyline_r34_z_tune\\\\\\\",\\\\\\\"srp_bcnr33_wangan\\\\\\\",\\\\\\\"pagani_huayra\\\\\\\",\\\\\\\"ks_pagani_huayra_bc\\\\\\\",\\\\\\\"ks_porsche_718_boxster_s_pdk\\\\\\\",\\\\\\\"ks_porsche_991_carrera_s\\\\\\\",\\\\\\\"yg_porsche_911_speedster_2019\\\\\\\",\\\\\\\"wm_porsche_911_930\\\\\\\",\\\\\\\"ks_porsche_911_r\\\\\\\",\\\\\\\"gbe_porsche_gt3rs_p1x\\\\\\\"],\\\\\\\"CandidatePriorities\\\\\\\":[\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"2\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"1\\\\\\\",\\\\\\\"2\\\\\\\"],\\\\\\\"ShuffleCandidates\\\\\\\":false,\\\\\\\"VarietyLimitation\\\\\\\":7,\\\\\\\"OpponentsNumber\\\\\\\":7,\\\\\\\"StartingPosition\\\\\\\":0,\\\\\\\"AiLevel\\\\\\\":90.800000000000011,\\\\\\\"AiLevelMin\\\\\\\":90.800000000000011,\\\\\\\"AiLevelArrangeRandom\\\\\\\":0.1,\\\\\\\"AiLevelArrangeReverse\\\\\\\":false,\\\\\\\"AiLevelArrangePowerRatio\\\\\\\":false,\\\\\\\"AiAggression\\\\\\\":100.0,\\\\\\\"AiAggressionMin\\\\\\\":100.0,\\\\\\\"AiAggressionArrangeRandom\\\\\\\":0.1,\\\\\\\"AiAggressionArrangeReverse\\\\\\\":false}\\\",\\\"Version\\\":2}\",\"CarId\":\"ks_audi_r18_etron_quattro\",\"TrackId\":\"ks_nordschleife/touristenfahrten\",\"WeatherId\":\"3_clear\",\"RealConditions\":false,\"Temperature\":22.700000000000003,\"Time\":43124,\"TimeMultipler\":1,\"udt\":false,\"dtv\":\"2023-09-20T18:49:45.7502356-03:00\",\"tpc\":false,\"TrackPropertiesPresetFilename\":\"C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\AcTools Content Manager\\\\Presets\\\\Track States\\\\Auto (set by weather).cmpreset\",\"TrackPropertiesData\":\"{\\\"s\\\":0.95000000000000007,\\\"t\\\":0.0,\\\"r\\\":0.02,\\\"g\\\":132,\\\"d\\\":\\\"Track state specified by weather, or Green, in case weather doesn’t specify track state\\\",\\\"w\\\":true}\",\"asc\":true,\"AssistsPresetFilename\":\"C:\\\\Users\\\\User\\\\AppData\\\\Local\\\\AcTools Content Manager\\\\Presets\\\\Assists\\\\Pro.cmpreset\",\"AssistsData\":\"{\\\"IdealLine\\\":false,\\\"AutoBlip\\\":false,\\\"StabilityControl\\\":0.0,\\\"AutoBrake\\\":false,\\\"AutoShifter\\\":false,\\\"SlipSteam\\\":1.0,\\\"AutoClutch\\\":false,\\\"Abs\\\":2,\\\"TractionControl\\\":2,\\\"VisualDamage\\\":true,\\\"Damage\\\":0.0,\\\"TyreWear\\\":0.25,\\\"FuelConsumption\\\":1.0,\\\"TyreBlankets\\\":false}\",\"ico\":false,\"wsf\":18.5,\"wst\":18.5,\"wd\":330.0,\"rws\":false,\"rwd\":false,\"rcTimezones\":true,\"rcManTime\":false,\"rcManWind\":false,\"rcLw\":false,\"rte\":false,\"rti\":false,\"crt\":false}"
+}
