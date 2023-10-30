@@ -1,26 +1,47 @@
-import json
-from sqlalchemy.orm import Session
-from models import Track
+from sqlalchemy import Column, ForeignKey, Integer, String
+from sqlalchemy.orm import relationship
 
-def create_track_from_json(db: Session, json_file_path: str):
-    try:
-        with open(json_file_path, 'r') as json_file:
-            data = json.load(json_file)
+from database import Base
 
-            # Suponha que o JSON contenha um campo 'name' para o nome da pista.
-            if 'name' in data:
-                track_name = data['name']
+class Track(Base):
+    __tablename__ = "TRACK"
 
-                # Crie um novo objeto Track com base no nome da pista e insira-o no banco de dados.
-                db_track = Track(name=track_name)
-                db.add(db_track)
-                db.commit()
-                db.refresh(db_track)
-                return db_track
-            else:
-                raise ValueError("O arquivo JSON não contém o campo 'name'.")
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    track_name = Column(String(100), nullable=False)
 
-    except FileNotFoundError:
-        raise FileNotFoundError(f"O arquivo JSON em {json_file_path} não foi encontrado.")
-    except Exception as e:
-        raise e
+class Pilot(Base):
+    __tablename__ = "PILOT"
+
+    id = Column(Integer, primary_key=True)
+    name = Column(String(100), nullable=False)
+    car = Column(String(30), nullable=False)
+    skin = Column(String(30), nullable=False)
+    # track_id = Column(Integer, ForeignKey('track.id'), nullable=False)
+
+class Sessao(Base):
+    __tablename__ = "Sessao"
+
+    id = Column(Integer, primary_key=True)
+    lapsCount = Column(Integer)
+    duration = Column(Integer)
+
+
+class Lap(Base):
+    __tablename__ = "Lap"
+
+    id = Column(Integer, primary_key=True)
+    lap = Column(Integer)
+    car = Column(Integer)
+    time = Column(Integer)
+    cuts = Column(Integer)
+    tyre = Column(String(25))
+
+    # sessao_id = Column(Integer, ForeignKey('Sessao.id'), nullable=False)
+    # bestlaps = relationship("BestLap", back_populates="lap")
+
+# class BestLap(Base):
+#     __tablename__ = "BestLap"
+
+#     lap_car = Column(Integer, ForeignKey('Lap.car'))
+#     lap_time = Column(Integer, ForeignKey('Lap.time'))
+#     lap_lap = Column(Integer, ForeignKey('Lap.lap'))

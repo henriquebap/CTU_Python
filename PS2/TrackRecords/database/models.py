@@ -1,47 +1,54 @@
-from sqlalchemy import Column, ForeignKey, Integer, String
+from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
+from sqlalchemy.ext.declarative import declarative_base
 
-from database import Base
+Base = declarative_base()
 
 class Track(Base):
     __tablename__ = "TRACK"
 
-    id = Column(Integer, primary_key=True)
-    name = Column(String(100))
+    id = Column(Integer, primary_key=True, autoincrement=True,nullable=False)
+    track_name = Column(String(100), nullable=False)
+    pilots = relationship("Pilot", back_populates="track")
 
 class Pilot(Base):
-    __tablename__ = "Pilot"
+    __tablename__ = "PILOT"
 
     id = Column(Integer, primary_key=True)
     name = Column(String(100), nullable=False)
     car = Column(String(30), nullable=False)
     skin = Column(String(30), nullable=False)
-    track_id = Column(Integer, ForeignKey('Track.id'), nullable=False)
+    track_id = Column(Integer, ForeignKey('TRACK.id'), nullable=False)
+
+    # Define the relationship to the 'Track' model
+    track = relationship("Track", back_populates="pilots")
 
 class Sessao(Base):
-    __tablename__ = "Sessao"
+    __tablename__ = "SESSAO"
 
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True, autoincrement=True)
     lapsCount = Column(Integer)
     duration = Column(Integer)
-
+    laps = relationship("Lap", back_populates="sessao")
 
 class Lap(Base):
-    __tablename__ = "Lap"
+    __tablename__ = "LAP"
 
     id = Column(Integer, primary_key=True)
-    lap = Column(Integer)
-    car = Column(Integer)
-    time = Column(Integer)
-    cuts = Column(Integer)
-    tyre = Column(String(25))
+    lap = Column(Integer, nullable=False)
+    car = Column(Integer, nullable=False)
+    time = Column(Integer, nullable=False)
+    cuts = Column(Integer, nullable=False)
+    tyre = Column(String(25), nullable=False)
+    sessao_id = Column(Integer, ForeignKey('SESSAO.id'), nullable=False)
 
-    sessao_id = Column(Integer, ForeignKey('Sessao.id'), nullable=False)
-    # bestlaps = relationship("BestLap", back_populates="lap")
+    # Define the relationship to the 'Sessao' model
+    sessao = relationship("Sessao", back_populates="laps")
 
-# class BestLap(Base):
-#     __tablename__ = "BestLap"
+class BestLap(Base):
+    __tablename__ = "BESTLAP"
 
-#     lap_car = Column(Integer, ForeignKey('Lap.car'))
-#     lap_time = Column(Integer, ForeignKey('Lap.time'))
-#     lap_lap = Column(Integer, ForeignKey('Lap.lap'))
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    lap_car = Column(Integer)
+    lap_time = Column(Integer)
+    lap_lap = Column(Integer)

@@ -3,22 +3,18 @@ from database import SessionLocal, models
 def create_track(json_file_path: str):
     db = SessionLocal()
     
-
     try:
-
         with open(json_file_path, 'r') as json_file:
             data = json.load(json_file)
             if 'track' in data:
-                track_name = data['track']
+                track_name = data["track"]
 
-                db_track = models.Track()
-                db_track = models.Track(name=track_name)
+                db_track = models.Track(track_name=track_name)
                 db.add(db_track)
                 db.commit()
+                db.refresh(db_track)
             else:
-                raise ValueError("O Arquivo Json nao tem o campo chamado 'Track'. ")
-    except FileNotFoundError:
-        raise FileNotFoundError(f"O arquivo Json em {json_file_path} nao foi encontrado")
+                raise ValueError("JSON data does not contain the 'track' field.")
     finally:
         db.close()
 
@@ -60,8 +56,8 @@ def create_session(json_file_path: str):
                 session_lapsCount = data["lapsCount"]
                 session_duration = data["duration"]
 
-                db_session = models.Session()
-                db_session = models.Session(lapsCount=session_lapsCount, duration = session_duration)
+                db_session = models.Sessao()
+                db_session = models.Sessao(lapsCount=session_lapsCount, duration = session_duration)
                 db.add(db_session)
                 db.commit()
                 db.refresh(db_session)
