@@ -45,13 +45,14 @@ def get_stores_with_items():
 
     return stores
 
-def create_item(name, description, price):
+def create_item(store_id: int, name, description, price):
     db = SessionLocal()
     try:
         db_item = models.Item()
         db_item.name = name
         db_item.description = description
         db_item.price = price
+        db_item.store_id = store_id
         db.add(db_item)
         db.commit()
         db.refresh(db_item)

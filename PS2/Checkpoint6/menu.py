@@ -35,7 +35,7 @@ class Menu:
             name = input('Please enter the name of the new item: ')
             description = input('Write a description: ')
             price = float(input('Set a price: '))
-            item = crud.create_item(name, description, price)
+            item = crud.create_item(name, description, price, store)
             print(f"Item '{item.name}' created and associated with store '{store.name}'.")
         else:
             print("That Store does not exist.")
