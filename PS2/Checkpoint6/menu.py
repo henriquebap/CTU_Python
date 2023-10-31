@@ -29,7 +29,7 @@ class Menu:
         print(f"Store Successfully Created {store.id}")
             
     def create_item(self):
-        store_id = int(input('Enter the store ID for this item'))
+        store_id = int(input('Enter the store ID for this item: '))
         store = crud.get_store_by_id(store_id)
         if store is not None:
             name = input('Please enter the name of the new item: ')

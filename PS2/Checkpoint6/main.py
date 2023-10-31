@@ -6,14 +6,14 @@ def main():
         ("Create Store","Option 1 : "),
         ("Create Item", "Option 2 :"),
         ("View Stores", "Option 3:"),
-        ("Exit", "Option 0 : Exit")
+        ("Exit", "Option 4 : Exit")
     ]
     main_menu = Menu("Menu Principal",options)
     while True:
         main_menu.show()
         choice = main_menu.get_choice()
 
-        if choice == 0:
+        if choice == 4:
             print("EXITING THE PROGRAM. Bye Bye See u later!!")
             break
         elif choice == 1:
