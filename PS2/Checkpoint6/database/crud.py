@@ -1,7 +1,6 @@
 from database import SessionLocal, models
 from sqlalchemy.orm import joinedload
 import schemas
-import sqlalchemy
 
 
 def create_store(store: schemas.StoreCreate):
@@ -110,16 +109,6 @@ def get_item(item_id: int):
         db.close()
     return item
 
-
-# def get_store_and_items():
-#     db = SessionLocal()
-#     try:
-#         stores = db.query(models.Store).options(joinedload(models.Store.itens)).order_by(models.Store.name).all()
-#         return [store.__dict__ for store in stores]
-#     except Exception as e:
-#         print("Error: ", str(e))
-#     finally:
-#         db.close()
 
 def get_items():
     db = SessionLocal()
