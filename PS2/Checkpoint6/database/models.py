@@ -8,7 +8,6 @@ class Store(Base):
     id = Column(Integer, primary_key=True)
     name = Column(String(50), nullable=False)
 
-    # Defina o relacionamento com a classe "Item"
     itens = relationship("Item", back_populates="store", lazy = "joined")
 
 class Item(Base):
@@ -20,5 +19,4 @@ class Item(Base):
     price = Column(Float, default=0)
     store_id = Column(Integer, ForeignKey('STORE_CP6.id'))
 
-    # Defina o relacionamento com a classe "Store"
     store = relationship("Store", back_populates="itens")
