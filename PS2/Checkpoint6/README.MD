@@ -27,3 +27,9 @@
 6. Qualquer Duvida ou problema me mandar um teams ou um email:
 
    - henriquebaptista2003@gmail.com
+
+---
+
+### Github project link:
+
+- https://github.com/henriquebap/CTU_Python/tree/main/PS2/Checkpoint6
