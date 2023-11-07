@@ -5,19 +5,21 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 
 class Track(Base):
-    __tablename__ = "TRACK"
+    __tablename__ = "TRACK_T1"
 
     id = Column(Integer, primary_key=True, autoincrement=True,nullable=False)
     track_name = Column(String(100), nullable=False)
+    number_of_sessions = Column(Integer)
+
     pilots = relationship("Pilot", back_populates="track")
 
 class Pilot(Base):
-    __tablename__ = "PILOT"
+    __tablename__ = "PILOT_T1"
 
     id = Column(Integer, primary_key=True)
     name = Column(String(100), nullable=False)
-    car = Column(String(30), nullable=False)
-    skin = Column(String(30), nullable=False)
+    car = Column(String(80), nullable=False)
+    skin = Column(String(80), nullable=False)
     track_id = Column(Integer, ForeignKey('TRACK.id'), nullable=False)
 
     # Define the relationship to the 'Track' model
@@ -26,7 +28,7 @@ class Pilot(Base):
 class Sessao(Base):
     __tablename__ = "SESSAO"
 
-    id = Column(Integer, primary_key=True, autoincrement=True)
+    id = Column(Integer, primary_key=True)
     lapsCount = Column(Integer)
     duration = Column(Integer)
     laps = relationship("Lap", back_populates="sessao")
